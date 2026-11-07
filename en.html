@@ -231,6 +231,7 @@ a{color:#0075C1;text-decoration:none}a:hover{color:#005A94}
       </div>
       <div id="form-wrap">
         <form id="talep-form" style="display: flex; flex-direction: column; gap: 22px">
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display: none">
           <fieldset style="border: 0; padding: 0; margin: 0">
             <legend style="font-size: 14px; font-weight: 600; margin-bottom: 10px">Request type</legend>
             <div style="display: flex; flex-wrap: wrap; gap: 10px">
@@ -238,16 +239,17 @@ a{color:#0075C1;text-decoration:none}a:hover{color:#005A94}
             </div>
           </fieldset>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px">
-            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1B1B1B">Full name<input type="text" required="required" style="min-height: 50px; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 4px; font: 400 15px 'Open Sans', Arial, sans-serif; background: #FFFFFF; box-sizing: border-box; width: 100%"></label>
-            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1B1B1B">Institution / Hospital<input type="text" style="min-height: 50px; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 4px; font: 400 15px 'Open Sans', Arial, sans-serif; background: #FFFFFF; box-sizing: border-box; width: 100%"></label>
-            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1B1B1B">Phone<input type="tel" required="required" style="min-height: 50px; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 4px; font: 400 15px 'Open Sans', Arial, sans-serif; background: #FFFFFF; box-sizing: border-box; width: 100%"></label>
-            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1B1B1B">E-mail<input type="email" style="min-height: 50px; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 4px; font: 400 15px 'Open Sans', Arial, sans-serif; background: #FFFFFF; box-sizing: border-box; width: 100%"></label>
-            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1B1B1B">System type<select style="min-height: 50px; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 4px; font: 400 15px 'Open Sans', Arial, sans-serif; background: #FFFFFF; box-sizing: border-box; width: 100%"><option>MR</option><option>CT</option><option>PET/CT</option><option>Gamma Camera</option><option>Angiography</option><option>X-ray</option><option>Workstation</option><option>Other</option></select></label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1B1B1B">Full name<input type="text" required="required" name="ad_soyad" style="min-height: 50px; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 4px; font: 400 15px 'Open Sans', Arial, sans-serif; background: #FFFFFF; box-sizing: border-box; width: 100%"></label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1B1B1B">Institution / Hospital<input type="text" style name="marka_model" name="kurum"="min-height: 50px; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 4px; font: 400 15px 'Open Sans', Arial, sans-serif; background: #FFFFFF; box-sizing: border-box; width: 100%"></label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1B1B1B">Phone<input type="tel" name="telefon" required="required" style="min-height: 50px; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 4px; font: 400 15px 'Open Sans', Arial, sans-serif; background: #FFFFFF; box-sizing: border-box; width: 100%"></label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1B1B1B">E-mail<input type="email" name="email" style="min-height: 50px; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 4px; font: 400 15px 'Open Sans', Arial, sans-serif; background: #FFFFFF; box-sizing: border-box; width: 100%"></label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1B1B1B">System type<select name="cihaz" style="min-height: 50px; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 4px; font: 400 15px 'Open Sans', Arial, sans-serif; background: #FFFFFF; box-sizing: border-box; width: 100%"><option>MR</option><option>CT</option><option>PET/CT</option><option>Gamma Camera</option><option>Angiography</option><option>X-ray</option><option>Workstation</option><option>Other</option></select></label>
             <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1B1B1B">Brand / Model<input type="text" style="min-height: 50px; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 4px; font: 400 15px 'Open Sans', Arial, sans-serif; background: #FFFFFF; box-sizing: border-box; width: 100%"></label>
           </div>
-          <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1B1B1B">Description of the issue or request<textarea rows="5" style="padding: 12px 14px; border: 1px solid #BDBDBD; border-radius: 4px; font: 400 15px 'Open Sans', Arial, sans-serif; resize: vertical"></textarea></label>
-          <label style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: #5E5E5E"><input type="checkbox" required="required" style="width: 20px; height: 20px; margin: 0; flex-shrink: 0">I have read the <a href="en-privacy.html" style="text-decoration: underline">privacy notice</a> and agree that my personal data is processed to respond to my request.</label>
+          <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1B1B1B">Description of the issue or request<textarea name="mesaj" rows="5" style="padding: 12px 14px; border: 1px solid #BDBDBD; border-radius: 4px; font: 400 15px 'Open Sans', Arial, sans-serif; resize: vertical"></textarea></label>
+          <label style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: #5E5E5E"><input type="checkbox" name="kvkk_onay" required="required" style="width: 20px; height: 20px; margin: 0; flex-shrink: 0">I have read the <a href="en-privacy.html" style="text-decoration: underline">privacy notice</a> and agree that my personal data is processed to respond to my request.</label>
           <div style="text-align: center"><button type="submit" style="min-height: 56px; padding: 0 44px; border: 0; border-radius: 48px; background: #0075C1; color: #FFFFFF; font: 700 14px 'Open Sans', Arial, sans-serif; cursor: pointer">Send Request</button></div>
+          <p id="form-error" role="alert" hidden style="margin: 0; text-align: center; color: #B3261E; font-size: 14px">Could not send. Please try again or call +90 (312) 480 00 50.</p>
         </form>
       </div>
     </div>
@@ -291,9 +293,29 @@ a{color:#0075C1;text-decoration:none}a:hover{color:#005A94}
   document.addEventListener('click', function (e) { var m = document.getElementById('svc-menu'); if (m && !m.hidden && !m.contains(e.target)) { m.hidden = true; } });
   var pills = document.querySelectorAll('.type-pill');
   pills.forEach(function (p) { p.addEventListener('click', function () { pills.forEach(function (q) { q.classList.remove('on'); q.setAttribute('aria-pressed', 'false'); }); p.classList.add('on'); p.setAttribute('aria-pressed', 'true'); }); });
-  var form = document.getElementById('talep-form'), ok = document.getElementById('form-ok'), wrap = document.getElementById('form-wrap');
-  if (form) form.addEventListener('submit', function (e) { e.preventDefault(); /* TODO: formu e-postaya / sunucuya gönder */ wrap.hidden = true; ok.hidden = false; });
-  var r = document.getElementById('form-reset'); if (r) r.addEventListener('click', function () { form.reset(); ok.hidden = true; wrap.hidden = false; });
+  /* ---- Servis / satış formu: Web3Forms ----
+     Anahtarlar web3forms.com'dan alınır. "2. El / Kiralama" talepleri sales@, diğerleri service@ adresine gider. */
+  var WEB3FORMS = { service: '518a5857-c8a5-4661-b419-2b3e1d56e4ee', sales: '6bd77c53-a914-4029-ab47-42e30c7d9104' };
+  var form = document.getElementById('talep-form'), ok = document.getElementById('form-ok'), wrap = document.getElementById('form-wrap'), err = document.getElementById('form-error');
+  var q = new URLSearchParams(location.search).get('talep');
+  if (q === 'satis' && pills.length) { pills[pills.length - 1].click(); }
+  if (form) form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var on = document.querySelector('.type-pill.on'), idx = Array.prototype.indexOf.call(pills, on);
+    var isSales = idx === pills.length - 1;
+    var key = (isSales && WEB3FORMS.sales.indexOf('BURAYA') === -1) ? WEB3FORMS.sales : WEB3FORMS.service; /* satış anahtarı yoksa geçici olarak servis formuna gider */
+    var btn = form.querySelector('button[type="submit"]'), label = btn.textContent;
+    var data = { access_key: key, subject: (isSales ? '[Satış/Kiralama] ' : '[Servis] ') + (on ? on.textContent : '') + ' – gamatek.com.tr', from_name: 'gamatek.com.tr web formu', 'Talep türü': on ? on.textContent : '', 'Sayfa dili': document.documentElement.lang };
+    new FormData(form).forEach(function (v, k) { data[k] = v; });
+    if (data.botcheck) return;
+    err.hidden = true; btn.disabled = true; btn.textContent = '…';
+    fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(data) })
+      .then(function (r) { return r.json(); })
+      .then(function (j) { if (!j.success) throw new Error(j.message || 'error'); form.reset(); wrap.hidden = true; ok.hidden = false; })
+      .catch(function () { err.hidden = false; })
+      .then(function () { btn.disabled = false; btn.textContent = label; });
+  });
+  var r = document.getElementById('form-reset'); if (r) r.addEventListener('click', function () { ok.hidden = true; wrap.hidden = false; });
 })();
 </script>
 </body>
