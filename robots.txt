@@ -1,0 +1,5 @@
+# TEST: yayina alirken asagidaki iki satiri "Allow: /" yapin
+User-agent: *
+Disallow: /
+
+Sitemap: https://gamatek.com.tr/sitemap.xml
