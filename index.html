@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <script>try{var q=new URLSearchParams(location.search).get("l");if(q)localStorage.setItem("gt_lang",q);}catch(e){}</script>
-<script>try{if(!localStorage.getItem("gt_lang")&&!/bot|crawl|spider|slurp|google|bing|yandex|baidu|facebookexternalhit|linkedin|whatsapp/i.test(navigator.userAgent)){var l=(navigator.languages||[navigator.language||""]).join(",").toLowerCase();if(l&&!/(^|,)tr/.test(l))location.replace((/(^|,)(ru|kk|ky|uz)/.test(l)?"https://www.gamatekmedical.com/ru.html":"https://www.gamatekmedical.com/")+location.hash);}}catch(e){}</script>
+<script>try{if(!localStorage.getItem("gt_lang")&&!/bot|crawl|spider|slurp|google|bing|yandex|baidu|facebookexternalhit|linkedin|whatsapp/i.test(navigator.userAgent)){var l=(navigator.languages||[navigator.language||""]).join(",").toLowerCase();if(l&&!/(^|,)tr/.test(l))location.replace((/(^|,)(ru|kk|ky|uz)/.test(l)?"https://www.gamatekmedical.com/ru.html":"https://www.gamatekmedical.com/")+location.search+location.hash);}}catch(e){}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Gamatek Medikal | MR, Tomografi Servis, Yedek Parça – Ankara</title>
@@ -224,7 +224,7 @@ a{color:#0075C1;text-decoration:none}a:hover{color:#005A94}
             <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1B1B1B">Marka / Model<input name="marka_model" type="text" style="min-height: 50px; padding: 0 14px; border: 1px solid #BDBDBD; border-radius: 4px; font: 400 15px 'Open Sans', Arial, sans-serif; background: #FFFFFF; box-sizing: border-box; width: 100%"></label>
           </div>
           <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #1B1B1B">Arıza veya talep açıklaması<textarea name="mesaj" rows="5" style="padding: 12px 14px; border: 1px solid #BDBDBD; border-radius: 4px; font: 400 15px 'Open Sans', Arial, sans-serif; resize: vertical"></textarea></label>
-          <label style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: #5E5E5E"><input name="kvkk_onay" type="checkbox" required="required" style="width: 20px; height: 20px; margin: 0; flex-shrink: 0"><a href="kvkk.html" style="text-decoration: underline">KVKK aydınlatma metnini</a> okudum; kişisel verilerimin talebimin yanıtlanması amacıyla işlenmesini kabul ediyorum.</label>
+          <label style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: #5E5E5E"><input name="kvkk_onay" type="checkbox" required="required" style="width: 20px; height: 20px; margin: 0; flex-shrink: 0"><span><a href="kvkk.html" style="text-decoration: underline">KVKK aydınlatma metnini</a> okudum; kişisel verilerimin talebimin yanıtlanması amacıyla işlenmesini kabul ediyorum.</span></label>
           <div style="text-align: center"><button type="submit" style="min-height: 56px; padding: 0 44px; border: 0; border-radius: 48px; background: #0075C1; color: #FFFFFF; font: 700 14px 'Open Sans', Arial, sans-serif; cursor: pointer">Talebi Gönder</button></div>
           <p id="form-error" role="alert" hidden style="margin: 0; text-align: center; color: #B3261E; font-size: 14px">Gönderilemedi. Lütfen tekrar deneyin ya da +90 (312) 480 00 50 numarasını arayın.</p>
         </form>
